@@ -1,0 +1,108 @@
+body {
+  background-color: rgb(249, 190, 239);
+  font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+  margin: 30px;
+}
+
+h1 {
+  color: rgb(100, 0, 93);
+  font-size: 72px;
+  text-align: center;
+  -webkit-text-stroke: 2px white;
+}
+
+h2 {
+  color: rgb(255, 0, 255);
+  font-size: 60px;
+  text-align:center;
+  border-bottom: 3px solid rgb(255, 3, 255);
+}
+
+p {
+  font-size: 25px;
+  line-height: 1.5;
+}
+
+a {
+  color: rgb(0, 13, 254);
+}
+
+img {
+  width: 400px;
+  border: 5px solid rgb(218, 52, 207);
+  border-radius: 20px;
+  display: block;
+margin: 0 auto;
+}
+
+li {
+  color: rgb(0, 0, 0);
+  margin: 12px;
+}
+body {
+  isolation: isolate;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+
+  background-image:
+    radial-gradient(circle, white 1px, transparent 2px),
+    radial-gradient(circle, #e83ec4 1px, transparent 2px),
+    radial-gradient(circle, white 1.5px, transparent 2.5px);
+
+  background-size: 37px 43px, 61px 71px, 97px 107px;
+  animation: glitter 2s ease-in-out infinite alternate;
+}
+
+body::after {
+  background-position: 19px 23px, 31px 37px, 49px 53px;
+  animation-delay: -1s;
+  animation-duration: 3s;
+}
+
+@keyframes glitter {
+  from { opacity: 0.2; }
+  to   { opacity: 0.9; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before,
+  body::after {
+    animation: none;
+    opacity: 0.6;
+  }
+}
+body::before,
+body::after {
+  animation:
+    glitter 2s ease-in-out infinite alternate,
+    glitter-drift 16s linear infinite;
+}
+
+body::after {
+  animation-duration: 3s, 24s;
+  animation-delay: -1s, -12s;
+}
+
+@keyframes glitter-drift {
+  from {
+    background-position: 0 0, 0 0, 0 0;
+  }
+  to {
+    background-position: 74px 86px, 122px 142px, 194px 214px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before,
+  body::after {
+    animation: none;
+    opacity: 0.6;
+  }
+}
