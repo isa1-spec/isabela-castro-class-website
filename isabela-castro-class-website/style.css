@@ -106,3 +106,18 @@ body::after {
     opacity: 0.6;
   }
 }
+div {
+  border: 2px solid white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+}
+#page-title {
+  color: rgb(147, 27, 147);
+  font-size: 50px;
+}
+.highlight {
+  background-color: white;
+  color: purple;
+  padding: 10px;
+}
