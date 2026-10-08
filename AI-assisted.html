@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-assisted</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    
+    .paw {
+      font-size: 65px;
+      background: transparent;
+      border: none;
+      padding: 15px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 id="page-title">Benito's Hidden Treats</h1>
+
+  <p>Click a paw to see what's underneath! 🐾</p>
+
+  <div style="text-align: center;">
+  <button class="paw" onclick="liftPaw(this, '🦴')">🐾</button>
+  <button class="paw" onclick="liftPaw(this, '🍪')">🐾</button>
+  <button class="paw" onclick="liftPaw(this, '🦴')">🐾</button>
+  <button class="paw" onclick="liftPaw(this, '🍪')">🐾</button>
+  <button class="paw" onclick="liftPaw(this, '🦴')">🐾</button>
+</div>
+
+  <p>Click the treat to cover it with the paw again!</p>
+
+  <p style="max-width: 700px; margin: 20px auto; padding: 0 25px;">
+    This page was made with the assistance of ChatGPT. I asked the bot to write html for a page that includes pictures of paws that flip over to reveal treats when clicked. The first time it ran the command it generated an entire downloadable page with elements similar to what I had coded, but not taking my actual written code into account. The second time I asked it to use the most basic code possible and I was extremely exact about the visual styling of the content. It was most helpful when I wrote shorter, hyper-specific prompts, however this was the most tiem consuming method. After this exercise I would argue that the use of ChatGPT should be restricted to troubleshooting code rather than writing it from the very beginning, particularly for those that have just started learning to code. </p>
+
+  <script>
+    function liftPaw(button, treat) {
+      // paw = reveal treat
+      if (button.textContent === "🐾") {
+        button.textContent = treat;
+      } else {
+        // put the paw back.
+        button.textContent = "🐾";
+      }
+    }
+  </script>
+  <a href="index.html">Back to Home</a>
+</body>
+</html>
