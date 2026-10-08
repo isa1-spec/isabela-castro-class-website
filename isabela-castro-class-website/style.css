@@ -32,7 +32,7 @@ img {
   border: 5px solid rgb(218, 52, 207);
   border-radius: 20px;
   display: block;
-margin: 0 auto;
+margin: 20 auto;
 }
 
 li {
@@ -107,9 +107,13 @@ body::after {
   }
 }
 div {
-  border: 2px solid white;
+  background-color: whitesmoke;
+  width: 500px;
+  border: 8px solid white;
+  padding: 30px;
   margin-top: 10px;
   margin-bottom: 10px;
+  
   padding: 20px;
 }
 #page-title {
@@ -119,5 +123,58 @@ div {
 .highlight {
   background-color: white;
   color: purple;
-  padding: 10px;
+  padding: 3px;
+  font-size: 30px;
+}
+body {
+  display: grid;
+  place-items: center;
+  margin: 0;           
+}
+
+.homepage {
+  text-align: center;
+}
+
+.homepage ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+
+.homepage {
+  text-align: center;
+}
+.homepage ul {
+  list-style-position: inside;
+  padding-left: 0;
+}
+.homepage img {
+  display: block;
+  margin: 25px auto 0;
+}
+.benito-play {
+  margin: 30px auto;
+  padding: 30px;
+  text-align: center;
+}
+#fact-button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+#fact-button img {
+  display: block;
+  width: 450px;
+  max-width: 100%;
+  height: 450px;
+  margin: 0;
+}
+#fact-button,
+#fact-button img {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
 }
